@@ -20,7 +20,7 @@ ami-nginx = "ami-01de68f7341137e7a"
 
 ami-sonar = "ami-0cc2b867d34e24f39"
 
-ami = "ami-09e67e426f25ce0d7"
+ami = "ami-0d0a67d2fab8829f1"
 
 keypair = "my-ec2-key"
 
