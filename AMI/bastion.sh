@@ -17,6 +17,7 @@ source ~/.bash_profile
 
 
 # install botocore, ansible and awscli
+sudo yum install -y python3-pip
 sudo python3 -m pip install boto
 sudo python3 -m pip install boto3
 sudo python3 -m pip install PyMySQL
