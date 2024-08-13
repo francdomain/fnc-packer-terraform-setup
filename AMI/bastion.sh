@@ -15,16 +15,36 @@ sudo echo "export PATH=$PATH:$JAVA_HOME/bin" >> ~/.bash_profile
 sudo echo "export CLASSPATH=.:$JAVA_HOME/jre/lib:$JAVA_HOME/lib:$JAVA_HOME/lib/tools.jar" >> ~/.bash_profile
 source ~/.bash_profile
 
+# Update package lists
+sudo yum update -y
 
-# install botocore, ansible and awscli
-sudo yum install -y python3-pip
-sudo python3 -m pip install boto
-sudo python3 -m pip install boto3
-sudo python3 -m pip install PyMySQL
-sudo python3 -m pip install mysql-connector-python
-sudo python3 -m pip install --upgrade setuptools
-sudo python3 -m pip install --upgrade pip
-sudo python3 -m pip install psycopg2==2.7.5 --ignore-installed
+# Install necessary development packages
+sudo yum install -y gcc python3-devel postgresql-devel
+
+# Create and activate a virtual environment
+python3 -m venv /home/ec2-user/venv
+source /home/ec2-user/venv/bin/activate
+
+# Upgrade pip
+pip install --upgrade pip
+
+# Install required Python packages
+pip install boto boto3 PyMySQL mysql-connector-python psycopg2==2.9.6
+
+# Deactivate the virtual environment
+deactivate
+
+echo "Setup complete. Virtual environment is located at /home/ec2-user/venv"
+
+## install botocore, ansible and awscli
+# sudo python3 -m pip install boto
+# sudo python3 -m pip install boto3
+# sudo python3 -m pip install PyMySQL
+# sudo python3 -m pip install mysql-connector-python
+# sudo python3 -m pip install --upgrade setuptools
+# sudo python3 -m pip install --upgrade pip
+# sudo python3 -m pip install psycopg2==2.7.5 --ignore-installed
+
 sudo curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
 sudo unzip awscliv2.zip
 sudo ./aws/install

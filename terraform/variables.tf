@@ -45,6 +45,22 @@ variable "ami" {
   description = "AMI ID for the launch template"
 }
 
+variable "ami-web" {
+  type    = string
+  default = ""
+}
+variable "ami-bastion" {
+  type    = string
+  default = ""
+}
+variable "ami-nginx" {
+  type    = string
+  default = ""
+}
+variable "ami-sonar" {
+  type    = string
+  default = ""
+}
 
 variable "keypair" {
   type        = string
