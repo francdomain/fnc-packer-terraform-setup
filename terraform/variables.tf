@@ -40,11 +40,6 @@ variable "environment" {
   description = "Enviroment"
 }
 
-variable "ami" {
-  type        = string
-  description = "AMI ID for the launch template"
-}
-
 variable "ami-web" {
   type    = string
   default = ""
