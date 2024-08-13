@@ -22,7 +22,7 @@ variable "security_groups_detail" {
       datalayer  = "datalayer-sg"
     }
     description = {
-      ext-alb    = "Allow TLS inbound traffic",
+      ext-alb    = "Allow HTTPS inbound traffic",
       bastion    = "Allow incoming SSH connections.",
       nginx      = "Allow HTTPS inbound traffic from ex-ALB and SSH traffic from bastion",
       int-alb    = "Allow TLS inbound traffic from nginx",

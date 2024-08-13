@@ -38,7 +38,7 @@ resource "aws_dynamodb_table" "terraform_locks" {
   }
 }
 
-########################
+#####################################
 
 # creating VPC
 module "VPC" {
