@@ -7,3 +7,13 @@
 #     encrypt        = true
 #   }
 # }
+
+terraform {
+  backend "remote" {
+    organization = "fnc-project-19"
+
+    workspaces {
+      name = "terraform-cloud"
+    }
+  }
+}

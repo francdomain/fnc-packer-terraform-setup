@@ -18,9 +18,7 @@ ami-bastion = "ami-02bd6605c736696b4"
 
 ami-nginx = "ami-01de68f7341137e7a"
 
-ami-sonar = "ami-0cc2b867d34e24f39"
-
-ami = "ami-0d0a67d2fab8829f1"
+ami-sonar = "ami-0d0a67d2fab8829f1"
 
 keypair = "my-ec2-key"
 
