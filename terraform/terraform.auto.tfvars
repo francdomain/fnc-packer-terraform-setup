@@ -14,7 +14,7 @@ environment = "dev"
 
 ami-web = "ami-00a1eea7e0eaf5491"
 
-ami-bastion = "ami-02bd6605c736696b4"
+ami-bastion = "ami-0d9f5a4d162fc226a"
 
 ami-nginx = "ami-01de68f7341137e7a"
 

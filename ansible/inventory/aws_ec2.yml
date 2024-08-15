@@ -7,8 +7,8 @@ regions:
 strict: False
 
 keyed_groups:
-- key: tags
-  prefix: tag
+  - key: tags
+    prefix: tag
 
 filters:
   tag:Name:
@@ -19,10 +19,10 @@ filters:
     # - fnc-sonarqube
     # - fnc-artifactory
     # - fnc-Jenkins
-  instance-state-name : running
+  instance-state-name: running
 
 hostnames:
-# a list in order of precedence for hostname variables.
+  # A list in order of precedence for hostname variables.
   - private-ip-address
   - tag:Name
   - dns-name
