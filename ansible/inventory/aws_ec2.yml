@@ -11,6 +11,7 @@ keyed_groups:
     prefix: tag
 
 filters:
+  instance-state-name: running
   tag:Name:
     - fnc-bastion
     - fnc-nginx
