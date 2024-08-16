@@ -2,7 +2,7 @@
 
 resource "aws_launch_template" "bastion-launch-template" {
   image_id               = var.ami-bastion
-  instance_type          = "t2.small"
+  instance_type          = "t3.small"
   vpc_security_group_ids = var.bastion-sg
 
   iam_instance_profile {
