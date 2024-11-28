@@ -8,7 +8,7 @@ We will build a secure infrastructure inside AWS VPC (Virtual Private Cloud) net
 
 Cost, Security, and Scalability are the major requirements for this project. Hence, implementing the architecture designed below, ensure that infrastructure for both websites, WordPress and Tooling, is resilient to Web Server's failures, can accomodate to increased traffic and, at the same time, has reasonable cost.
 
-The tooling code is stored in this [repository]((https://github.com/francdomain/tooling.git))
+The tooling code is stored in this [repository](https://github.com/francdomain/tooling.git)
 
 Always refer to the given diagram
 
