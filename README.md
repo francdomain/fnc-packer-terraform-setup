@@ -14,6 +14,7 @@ Always refer to the given diagram
 
 ![project image](./architecture.png)
 
+### The step by step implementation of this project is stored in [this documentation](https://github.com/francdomain/StegHub_DevOps-Cloud_Engineering/blob/main/Automate_Infrastructure_With_IaC_using_Terraform_4/project_19.md)
 
 
 ## install graphviz
